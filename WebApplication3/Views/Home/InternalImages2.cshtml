@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "InternalImages2";
+}
+
+<h2>Internal Images2</h2>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: none;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<div class="row">
+    <p>Please select the most relevent Picture</p>
+    <br>
+    <label class="column">
+        <input type="radio" id="image1" value="small">
+        <img src="~/Images/206780d2a4c20cda43dd469e27965e33.jpg" style="width:100%">
+    </label>
+    <label class="column">
+        <input type="radio" id="image2" value="small">
+        <img src="~/Images/9a1ebf2b87510742165a2e017273c3a9.jpg" style="width:100%">
+    </label>
+    <br>
+    <label class="column">
+        <input type="radio" id="image3" value="small">
+        <img src="~/Images/decotile backsplash.jpg" style="width:100%">
+    </label>
+    <label class="column">
+        <input type="radio" id="image4" value="small">
+        <img src="~/Images/wallpaper.jpg" style="width:100%">
+    </label>
+    <br><br>
+    <button value="Submit" onclick="onSubmit()">Next</button>
+</div>
+
+<script>
+    function onSubmit() {
+        window.location.href = "RegisterUser";
+    }
+</script>
